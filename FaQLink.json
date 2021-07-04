@@ -1,0 +1,13 @@
+{
+  "Key": "FaQLink",
+  "Name": "FaQ Link",
+  "Description": "A command that gives the FaQ link",
+  "Author": "Animenetra",
+  "Command": ["/FaQ", "/faq"],
+  "SendMessage": [
+    "&m&7--------------------------------------",
+    "&fFallen Kingdom FaQ Document:",
+    "&a&nhttps://bit.ly/3nYvJRX",
+    "&m&7--------------------------------------"
+  ]
+}
