@@ -1,0 +1,11 @@
+{
+  "Key": "GoldtoRep",
+  "Description": "base script for converting gold into repuation points",
+  "Author": "Animenetra",
+
+
+  "Set": ["currentgold", "currency_gold"],
+  "Subtract": ["currentgold", 10],
+  "Set": ["currency_gold", "currentgold"],
+  "KingdomAdd": ["Reputation", 10]
+}
