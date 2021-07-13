@@ -4,8 +4,6 @@
   "Author": "Animenetra",
 
 
-  "Set": ["currentgold", "currency_gold"],
-  "Subtract": ["currentgold", 10],
-  "Set": ["currency_gold", "currentgold"],
+  "KingdomAdd": ["currency_gold", -10],
   "KingdomAdd": ["Reputation", 10]
 }
