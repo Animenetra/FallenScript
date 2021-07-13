@@ -33,46 +33,56 @@
           "",
           "Buy Price: 1 Gold"
         ],
-        "material": "lime_stained_glass_pane"
+        "material": "orange_stained_glass_pane"
       },
       "13": {
-        "name": "&a8 Reputation",
+        "name": "&a10 Reputation",
         "description": [
-          "8 x Reputation",
+          "10 x Reputation",
           "",
-          "Buy Price: 8 Gold"
+          "Buy Price: 10 Gold"
         ],
-        "material": "lime_stained_glass_pane"
+        "material": "yellow_stained_glass_pane"
       },
       "14": {
-        "name": "&a16 Reputation",
+        "name": "&a100 Reputation",
         "description": [
-          "16 x Reputation",
+          "100 x Reputation",
           "",
-          "Buy Price: 16 Gold"
+          "Buy Price: 100 Gold"
         ],
         "material": "lime_stained_glass_pane"
       },
       "15": {
-        "name": "&a32 Reputation",
+        "name": "&a1,000 Reputation",
         "description": [
-          "32 x Reputation",
+          "1,000 x Reputation",
           "",
-          "Buy Price: 32 Gold"
+          "Buy Price: 1,000 Gold"
         ],
-        "material": "lime_stained_glass_pane"
+        "material": "green_stained_glass_pane"
       },
       "16": {
-        "name": "&a64 Reputation",
+        "name": "&a10,000 Reputation",
         "description": [
-          "64 x Reputation",
+          "10,000 x Reputation",
           "",
-          "Buy Price: 64 Gold"
+          "Buy Price: 10,000 Gold"
         ],
-        "material": "lime_stained_glass_pane"
+        "material": "cyan_stained_glass_pane"
+      },
+      "17": {
+        "name": "&a100,000 Reputation",
+        "description": [
+          "100,000 x Reputation",
+          "",
+          "Buy Price: 100,000 Gold"
+        ],
+        "material": "light_blue_stained_glass_pane"
       },
     }
   ],
+  "Dummy": [],
   "Dummy": [],
   "Dummy": [],
   "Dummy": [],
