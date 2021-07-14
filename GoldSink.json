@@ -9,19 +9,21 @@
       "texture": "ewogICJ0aW1lc3RhbXAiIDogMTYxMzc0MDE5NjE5MywKICAicHJvZmlsZUlkIiA6ICIwNWQ0NTNiZWE0N2Y0MThiOWI2ZDUzODg0MWQxMDY2MCIsCiAgInByb2ZpbGVOYW1lIiA6ICJFY2hvcnJhIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzcwMTkyODkwNTU4OTBjMTIxMWFjZDM3MjVhNzBmMDUxNTVlNmVjMTZlYTgzMjZjMzdmNDFiMjE2MTI2NjFkYjgiCiAgICB9CiAgfQp9",
       "signature": "dVWdZ9OaO0PySSQO3TyfTh0sB6faiXvuMAGFALNw48lWehuZsCpIIGjxaGHr+i/VR+xXW5lrKIB82TedbfGy8wyhYXmfbo9b8BtXMlRye0duwyMim2Bug1H62BB3VD/Z/4n8wF+Y3r8dfrSCCX8b3B6Rr2C3Y1i086mVD7a4g42Cj/1e+nlXosNenqkm0vKtvUfb0vBVIAx4xuOjexRyCwGEpcDW30n70lLzuljtDE0nrhfuyvhKif7HDyLrh+22nunkVv5KjdK5UqABcEXz8SB0mdEVhxzwNOPZYzylVMYuwOXFhG6Q3EavqRnpNP6E8VLvuJ9qqmnStE1ajRLwphDdbOnoh3EogBkhKwh0ayy0s/ZM8IxPvQAUXKDUlf71j/IeArS8nBfTO7U8pNPGbC/9NnRxa9vvqiEECxzqFwrDigEstZFENUqzlWby6MZFN08xqySaSahPi7FACmVCn9wkcImtWs+N7y2N7Mk4spX3uv5lwhC5taj+/WqZVxKLGreCs3pnIKnX8+wmEEYT2FIZHXJAWGrqizEp6/gpCkwl9X2pgrj89yG4NpaYiNAyjMu9tXgfoBOfbaRriSomk5jJLu5C93Grvd98LKmXWpOj1KunwmST4JdtF/BTk/sSCnr9RXDf9iMbnSM/ZC4PFgKQyzzJ1PC8yC9FuUhk4WM="
     },
-    "location": [1994.5, 29.0, 627.5, 0],
+    "location": [1999.5, 26.0, 594.5, 0],
     "name": ["&6Alex"]
   },
   "HighlightClickEntity": "tax_collector",
   "If": [],
   "InRaid": [],
-  "Skip": "RepShop",
+  "Skip": "EnterRepShop",
   "Skip": "InRaidMessage",
 
 
-  "Comment": "RepShop",
-  "SendMessage": "Entering shop",
+  "Comment": "EnterRepShop",
+  "SendMessage": "Entering the shop",
   "Wait": 20,
+
+  "Comment": "RepShop",
   "Menu": [
     "Alex",
     6,
@@ -82,15 +84,78 @@
       },
     }
   ],
-  "Dummy": [],
-  "Dummy": [],
-  "Dummy": [],
-  "Dummy": [],
-  "Dummy": [],
-  "Dummy": [],
+  "Skip": "GoldtoRep1",
+  "Skip": "GoldtoRep2",
+  "Skip": "GoldtoRep3",
+  "Skip": "GoldtoRep4",
+  "Skip": "GoldtoRep5",
+  "Skip": "GoldtoRep6",
 
 
   "Comment": "InRaidMessage",
   "SendMessage": "In raid, can't enter shop",
+  "Leave": [],
+
+
+
+  "Comment": "GoldtoRep1",
+  "If"[],
+  "KingdomEquals": ["currency_gold", "<=", 1],
+  "Skip": 1,
+  "SendMessage": "&cYou don't have enough gold to purchase this.",
+  "KingdomAdd": ["currency_gold", -1],
+  "KingdomAdd": ["Reputation", 1],
+  "Skip": "RepShop",
+
+
+  "Comment": "GoldtoRep2",
+  "If"[],
+  "KingdomEquals": ["currency_gold", "<=", 10],
+  "Skip": 1,
+  "SendMessage": "&cYou don't have enough gold to purchase this.",
+  "KingdomAdd": ["currency_gold", -10],
+  "KingdomAdd": ["Reputation", 10],
+  "Skip": "RepShop",
+
+
+  "Comment": "GoldtoRep3",
+  "If"[],
+  "KingdomEquals": ["currency_gold", "<=", 100],
+  "Skip": 1,
+  "SendMessage": "&cYou don't have enough gold to purchase this.",
+  "KingdomAdd": ["currency_gold", -100],
+  "KingdomAdd": ["Reputation", 100],
+  "Skip": "RepShop",
+
+
+  "Comment": "GoldtoRep4",
+  "If"[],
+  "KingdomEquals": ["currency_gold", "<=", 1000],
+  "Skip": 1,
+  "SendMessage": "&cYou don't have enough gold to purchase this.",
+  "KingdomAdd": ["currency_gold", -1000],
+  "KingdomAdd": ["Reputation", 1000],
+  "Skip": "RepShop",
+
+
+  "Comment": "GoldtoRep5",
+  "If"[],
+  "KingdomEquals": ["currency_gold", "<=", 10000],
+  "Skip": 1,
+  "SendMessage": "&cYou don't have enough gold to purchase this.",
+  "KingdomAdd": ["currency_gold", -10000],
+  "KingdomAdd": ["Reputation", 10000],
+  "Skip": "RepShop",
+
+
+  "Comment": "GoldtoRep6",
+  "If"[],
+  "KingdomEquals": ["currency_gold", "<=", 100000],
+  "Skip": 1,
+  "SendMessage": "&cYou don't have enough gold to purchase this.",
+  "KingdomAdd": ["currency_gold", -100000],
+  "KingdomAdd": ["Reputation", 100000],
+  "Skip": "RepShop",
+
 
 }
