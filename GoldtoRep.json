@@ -4,6 +4,6 @@
   "Author": "Animenetra",
 
 
-  "KingdomAdd": ["currency_gold", -10],
-  "KingdomAdd": ["Reputation", 10]
+  "KingdomAdd": ["currency_gold", -1],
+  "KingdomAdd": ["Reputation", 1]
 }
