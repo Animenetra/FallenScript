@@ -18,7 +18,6 @@
   "Skip": "EnterRepShop",
   "Skip": "InRaidMessage",
 
-
   "Comment": "EnterRepShop",
   "SendMessage": "Entering the shop",
   "Wait": 20,
@@ -91,15 +90,13 @@
   "Skip": "GoldtoRep5",
   "Skip": "GoldtoRep6",
 
-
   "Comment": "InRaidMessage",
   "SendMessage": "In raid, can't enter shop",
   "Leave": [],
 
 
-
   "Comment": "GoldtoRep1",
-  "If"[],
+  "If": [],
   "KingdomEquals": ["currency_gold", "<=", 1],
   "Skip": 1,
   "SendMessage": "&cYou don't have enough gold to purchase this.",
@@ -107,9 +104,8 @@
   "KingdomAdd": ["Reputation", 1],
   "Skip": "RepShop",
 
-
   "Comment": "GoldtoRep2",
-  "If"[],
+  "If": [],
   "KingdomEquals": ["currency_gold", "<=", 10],
   "Skip": 1,
   "SendMessage": "&cYou don't have enough gold to purchase this.",
@@ -117,9 +113,8 @@
   "KingdomAdd": ["Reputation", 10],
   "Skip": "RepShop",
 
-
   "Comment": "GoldtoRep3",
-  "If"[],
+  "If": [],
   "KingdomEquals": ["currency_gold", "<=", 100],
   "Skip": 1,
   "SendMessage": "&cYou don't have enough gold to purchase this.",
@@ -127,9 +122,8 @@
   "KingdomAdd": ["Reputation", 100],
   "Skip": "RepShop",
 
-
   "Comment": "GoldtoRep4",
-  "If"[],
+  "If": [],
   "KingdomEquals": ["currency_gold", "<=", 1000],
   "Skip": 1,
   "SendMessage": "&cYou don't have enough gold to purchase this.",
@@ -137,9 +131,8 @@
   "KingdomAdd": ["Reputation", 1000],
   "Skip": "RepShop",
 
-
   "Comment": "GoldtoRep5",
-  "If"[],
+  "If": [],
   "KingdomEquals": ["currency_gold", "<=", 10000],
   "Skip": 1,
   "SendMessage": "&cYou don't have enough gold to purchase this.",
@@ -147,15 +140,12 @@
   "KingdomAdd": ["Reputation", 10000],
   "Skip": "RepShop",
 
-
   "Comment": "GoldtoRep6",
-  "If"[],
+  "If": [],
   "KingdomEquals": ["currency_gold", "<=", 100000],
   "Skip": 1,
   "SendMessage": "&cYou don't have enough gold to purchase this.",
   "KingdomAdd": ["currency_gold", -100000],
   "KingdomAdd": ["Reputation", 100000],
-  "Skip": "RepShop",
-
-
+  "Skip": "RepShop"
 }
